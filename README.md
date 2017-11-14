@@ -2,7 +2,7 @@
 
 Automatically add HTTP2 Link headers for CSS, JS and image assets.
 
-![Screenshot](resources/img/logo.png)
+![Screenshot](resources/img/icon.png)
 
 ## Requirements
 
@@ -26,6 +26,8 @@ To install the plugin, follow these instructions.
 
 From [The Go Blog](https://blog.golang.org/h2push):
 > To improve latency, HTTP/2 introduced server push, which allows the server to push resources to the browser before they are explicitly requested. A server often knows many of the additional resources a page will need and can start pushing those resources as it responds to the initial request. This allows the server to fully utilize an otherwise idle network and improve page load times._
+
+Also: [Read what CloudFlare has to say about it](https://blog.cloudflare.com/announcing-support-for-http-2-server-push-2/).
 
 ## Configuring HTTP2 Server Push
 
