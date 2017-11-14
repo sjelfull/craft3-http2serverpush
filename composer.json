@@ -1,0 +1,53 @@
+{
+    "name": "superbig/craft3-http2serverpush",
+    "description": "Automatically add HTTP2 Link headers for CSS, JS and image assets.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "http2 server push"
+    ],
+    "support": {
+        "docs": "https://github.com/sjelfull/craft3-http2serverpush/blob/master/README.md",
+        "issues": "https://github.com/sjelfull/craft3-http2serverpush/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Superbig",
+            "homepage": "https://superbig.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.23",
+        "symfony/dom-crawler": "^2.7|^3.0",
+        "symfony/css-selector": "^2.7|^3.0",
+        "tightenco/collect": "^5.5"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "superbig\\http2serverpush\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "HTTP2 Server Push",
+        "handle": "http2-server-push",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/sjelfull/craft3-http2serverpush/master/CHANGELOG.md",
+        "components": {
+            "http2ServerPushService": "superbig\\http2serverpush\\services\\Http2ServerPushService"
+        },
+        "class": "superbig\\http2serverpush\\Http2ServerPush"
+    }
+}
