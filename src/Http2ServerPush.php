@@ -17,8 +17,6 @@ use superbig\http2serverpush\models\Settings;
 
 use Craft;
 use craft\base\Plugin;
-use craft\services\Plugins;
-use craft\events\PluginEvent;
 
 use yii\base\Event;
 
