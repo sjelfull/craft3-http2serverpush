@@ -2,7 +2,7 @@
 
 Automatically add HTTP2 Link headers for CSS, JS and image assets.
 
-![Screenshot](resources/img/plugin-logo.png)
+![Screenshot](resources/img/logo.png)
 
 ## Requirements
 
@@ -18,26 +18,30 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require sjelfull/http2-server-push
+        composer require superbig/craft3-http2serverpush
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for HTTP2 Server Push.
 
 ## HTTP2 Server Push Overview
 
--Insert text here-
+From [The Go Blog](https://blog.golang.org/h2push):
+> To improve latency, HTTP/2 introduced server push, which allows the server to push resources to the browser before they are explicitly requested. A server often knows many of the additional resources a page will need and can start pushing those resources as it responds to the initial request. This allows the server to fully utilize an otherwise idle network and improve page load times._
 
 ## Configuring HTTP2 Server Push
 
--Insert text here-
+```php
+<?php
+return [
+    // Limit how many tags to include in the Link tag
+    'limit'     => null,
+
+    // Include images
+    'includeImages' => false,
+];
+```
 
 ## Using HTTP2 Server Push
 
--Insert text here-
-
-## HTTP2 Server Push Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
+After the plugin is installed, Link headers will be added automatically to page template responses.
 
 Brought to you by [Superbig](https://superbig.co)
