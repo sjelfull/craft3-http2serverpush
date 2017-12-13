@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "~3.0.0-beta.23",
+        "craftcms/cms": "^3.0.0-beta.23",
         "symfony/dom-crawler": "^2.7|^3.0",
         "symfony/css-selector": "^2.7|^3.0",
         "tightenco/collect": "^5.5"
