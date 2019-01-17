@@ -2,7 +2,7 @@
     "name": "superbig/craft3-http2serverpush",
     "description": "Automatically add HTTP2 Link headers for CSS, JS and image assets.",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
